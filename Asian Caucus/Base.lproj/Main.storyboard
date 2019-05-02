@@ -1,24 +1,772 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xLs-fS-kw3">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="LdU-c9-Vs0">
+            <objects>
+                <viewController id="xLs-fS-kw3" customClass="SplashViewController" customModule="Asian_Caucus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rr9-0B-INH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AC_LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBy-QD-IbA">
+                                <rect key="frame" x="9" y="147" width="396" height="380"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asian Caucus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFC-TC-R2w">
+                                <rect key="frame" x="18" y="587" width="378" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="v18-bD-Rxg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="57"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="OBH-Fg-YbM" firstAttribute="bottom" secondItem="qFC-TC-R2w" secondAttribute="bottom" constant="178" id="641-AQ-snu"/>
+                            <constraint firstItem="qFC-TC-R2w" firstAttribute="top" secondItem="ZBy-QD-IbA" secondAttribute="bottom" constant="60" id="Nyc-PN-pVB"/>
+                            <constraint firstItem="OBH-Fg-YbM" firstAttribute="trailing" secondItem="ZBy-QD-IbA" secondAttribute="trailing" constant="9" id="dGx-6f-8lQ"/>
+                            <constraint firstItem="ZBy-QD-IbA" firstAttribute="top" secondItem="OBH-Fg-YbM" secondAttribute="top" constant="103" id="f99-bb-a5e"/>
+                            <constraint firstItem="qFC-TC-R2w" firstAttribute="leading" secondItem="OBH-Fg-YbM" secondAttribute="leading" constant="18" id="uCe-IJ-Ugx"/>
+                            <constraint firstItem="ZBy-QD-IbA" firstAttribute="leading" secondItem="OBH-Fg-YbM" secondAttribute="leading" constant="9" id="unN-1Y-y4V"/>
+                            <constraint firstItem="OBH-Fg-YbM" firstAttribute="trailing" secondItem="qFC-TC-R2w" secondAttribute="trailing" constant="18" id="voq-eh-gWP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OBH-Fg-YbM"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="bfT-eL-Zjp" appends="YES" id="v2C-zm-AlP"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <segue destination="ipe-VW-X5E" kind="show" identifier="Show" id="nVm-ts-etb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaI-p0-LdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bfT-eL-Zjp">
+                    <connections>
+                        <action selector="screenPressed:" destination="xLs-fS-kw3" id="840-rR-bNk"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-594.20289855072474" y="132.58928571428572"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Asian_Caucus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upcoming Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtL-pX-HVf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="45"/>
+                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gmT-9R-0LQ">
+                                <rect key="frame" x="0.0" y="162" width="414" height="346"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="x82-PD-azL" detailTextLabel="aT0-VO-fjq" rowHeight="59" style="IBUITableViewCellStyleSubtitle" id="V1E-0r-JmU">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="59"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V1E-0r-JmU" id="7rR-3M-HZz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="58.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x82-PD-azL">
+                                                    <rect key="frame" x="20" y="0.0" width="34" height="26.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aT0-VO-fjq">
+                                                    <rect key="frame" x="20" y="29.5" width="59.5" height="26.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Mm3-1b-fHr" kind="show" identifier="ShowEvent" id="GkJ-Qf-N1h"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Photos " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eA-Pj-5kr">
+                                <rect key="frame" x="0.0" y="507" width="414" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="45"/>
+                                <color key="textColor" red="0.99307483434677124" green="0.94869750738143921" blue="0.39592736959457397" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k9p-Rx-buQ">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Meet E-Board" id="6zs-wv-uC6">
+                                        <connections>
+                                            <segue destination="D7w-BU-Sql" kind="presentation" id="npj-Jb-mDz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Z6z-OC-0Se"/>
+                                    <barButtonItem title="About AC" id="NA0-n8-gPK">
+                                        <connections>
+                                            <action selector="aboutACPressed:" destination="wvf-fz-cfZ" id="Tjg-lJ-ouL"/>
+                                            <segue destination="Zhd-KK-aEJ" kind="show" identifier="AboutAC" id="WlU-ic-z7J"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="DCc-wK-eFb">
+                                <rect key="frame" x="0.0" y="586" width="414" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="b4I-5t-0sX" appends="YES" id="bfl-49-GaX"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9z9-uD-hjW">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Admin Login" id="3kw-vX-kBR">
+                                <connections>
+                                    <action selector="adminLoginPressed:" destination="BYZ-38-t0r" id="njQ-Oo-S9P"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Sign Out" id="XLi-xP-qGd">
+                                <connections>
+                                    <action selector="signOutPressed:" destination="BYZ-38-t0r" id="fp8-xp-fHI"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5be-x5-zXK">
+                            <connections>
+                                <segue destination="NmT-8t-fyA" kind="presentation" identifier="AddEvent" id="gXo-k8-dWN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addBarButton" destination="5be-x5-zXK" id="b37-fg-UsC"/>
+                        <outlet property="eventImage" destination="DCc-wK-eFb" id="fno-CF-a2Z"/>
+                        <outlet property="tableView" destination="gmT-9R-0LQ" id="BXv-28-7Ky"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="wvf-fz-cfZ" userLabel="Exit" sceneMemberID="exit"/>
+                <swipeGestureRecognizer direction="left" id="b4I-5t-0sX">
+                    <connections>
+                        <action selector="swipeImage:" destination="BYZ-38-t0r" id="C5W-fa-hV3"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="1576.8115942028987" y="132.58928571428572"/>
+        </scene>
+        <!--Event View Controller-->
+        <scene sceneID="lQb-zp-laW">
+            <objects>
+                <viewController id="Mm3-1b-fHr" customClass="EventViewController" customModule="Asian_Caucus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p3J-ha-BAs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AC_LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="bDX-MN-mJy">
+                                <rect key="frame" x="0.0" y="396" width="414" height="359"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jhP-4R-pyO">
+                                <rect key="frame" x="20" y="186" width="374" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Holi is the welcoming of the spring. Traditionally, Holi is celebrated by pouring colors onto friends and family, along with making sweets for their loved ones. BUT, Holi is also one of the LARGEST events on BC's campus. Be sure to let everyone know; attendance at Holi in the past has reached up to 1000 attendees!!! It's something you DON'T want to miss. AND guess what? It's FREE. Come for some amazing pictures, (hopefully) good weather, and even better times with all of your friends 
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="TimesNewRomanPSMT"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">MOST IMPORTANTLY: PLEASE MAKE SURE TO WEAR WHITE SHIRTS THAT YOU ARE OKAY WITH GETTING COLORED POWDER ONTO. THE COLOR CAN COME OFF SHIRTS!!!! </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is an Event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMF-js-33G">
+                                <rect key="frame" x="20" y="122" width="374" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="43"/>
+                                <color key="textColor" red="0.80146282911300659" green="0.31415650248527527" blue="0.31762927770614624" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OrA-fH-621"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionField" destination="jhP-4R-pyO" id="3c1-HX-pnL"/>
+                        <outlet property="eventLabel" destination="PMF-js-33G" id="17b-Gt-h2O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cL5-1o-e5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2532" y="133"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="jkR-pI-UP0">
+            <objects>
+                <viewController id="wa0-Bb-QEj" customClass="DetailViewController" customModule="Asian_Caucus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Emf-fv-XBf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type in the name of the event" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1CV-SM-PJY">
+                                <rect key="frame" x="20" y="118" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.80927497150000005" green="0.3101727366" blue="0.31762924790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="eventFieldChanged:" destination="wa0-Bb-QEj" eventType="editingChanged" id="0jd-rC-JH9"/>
+                                </connections>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AC_LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="euZ-gj-53R">
+                                <rect key="frame" x="62" y="443" width="295" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="L1l-kU-irx">
+                                <rect key="frame" x="19" y="233" width="376" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <date key="date" timeIntervalSinceReferenceDate="577859161.83049595">
+                                    <!--2019-04-25 04:26:01 +0000-->
+                                </date>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type in the Location" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pDE-S6-QYd">
+                                <rect key="frame" x="31" y="173" width="363" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.80927497150000005" green="0.3101727366" blue="0.31762924790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="M2x-VC-K9y">
+                                <rect key="frame" x="62" y="697" width="295" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.80927497150000005" green="0.3101727366" blue="0.31762924790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Attach a flyer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPq-NT-sID">
+                                <rect key="frame" x="62" y="414" width="290" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" red="0.80927497150000005" green="0.3101727366" blue="0.31762924790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8U2-6L-sLc">
+                                <rect key="frame" x="166" y="629" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Photo Library"/>
+                                <connections>
+                                    <action selector="photoLibraryPressed:" destination="wa0-Bb-QEj" eventType="touchUpInside" id="GZq-1k-NRf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a brief description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3J-dR-QoD">
+                                <rect key="frame" x="62" y="668" width="290" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" red="0.80927497150000005" green="0.3101727366" blue="0.31762924790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BVu-Yf-JJE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v9B-g1-uYs">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="DLz-v7-G7r">
+                            <connections>
+                                <action selector="cancelPressed:" destination="wa0-Bb-QEj" id="t2L-bg-h0c"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Mvr-9N-SJv">
+                            <connections>
+                                <action selector="saveBarButtonPressed:" destination="wa0-Bb-QEj" id="EoB-Zy-L1D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dateField" destination="L1l-kU-irx" id="6Wi-iz-sqj"/>
+                        <outlet property="descriptionField" destination="M2x-VC-K9y" id="RsW-XH-8cV"/>
+                        <outlet property="eventField" destination="1CV-SM-PJY" id="dkX-pI-Ktf"/>
+                        <outlet property="flyerImage" destination="euZ-gj-53R" id="4WY-VD-hmg"/>
+                        <outlet property="locationField" destination="pDE-S6-QYd" id="mU9-Zo-mNg"/>
+                        <outlet property="saveBarButton" destination="Mvr-9N-SJv" id="5L6-Ts-6vF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wF-v8-W3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4192.753623188406" y="132.58928571428572"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fSX-lv-o3c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ipe-VW-X5E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uwf-7w-AfZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zWF-5w-igQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQT-SE-Yp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="666.66666666666674" y="132.58928571428572"/>
+        </scene>
+        <!--Meet Eboard View Controller-->
+        <scene sceneID="w0p-Yv-yYN">
+            <objects>
+                <viewController id="mmA-Fb-zEN" customClass="MeetEboardViewController" customModule="Asian_Caucus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zIM-Sf-Nyf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AC_LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="oWr-0v-z8L">
+                                <rect key="frame" x="19" y="193" width="143" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tVu-9b-vib" appends="YES" id="7HR-37-iFW"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CSA" translatesAutoresizingMaskIntoConstraints="NO" id="aWN-fR-hVv">
+                                <rect key="frame" x="251" y="193" width="143" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JCBC" translatesAutoresizingMaskIntoConstraints="NO" id="PEB-d2-FcR">
+                                <rect key="frame" x="20" y="334" width="143" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KSA" translatesAutoresizingMaskIntoConstraints="NO" id="x8y-Dx-1Nx">
+                                <rect key="frame" x="251" y="334" width="143" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SASA" translatesAutoresizingMaskIntoConstraints="NO" id="TcG-EL-Cbf">
+                                <rect key="frame" x="20" y="468" width="143" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TCO" translatesAutoresizingMaskIntoConstraints="NO" id="AAg-pc-RY1">
+                                <rect key="frame" x="20" y="613" width="143" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="VSA" translatesAutoresizingMaskIntoConstraints="NO" id="ab0-oH-eKQ">
+                                <rect key="frame" x="251" y="613" width="143" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esb-JN-lH2">
+                                <rect key="frame" x="442" y="162" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PSBC" translatesAutoresizingMaskIntoConstraints="NO" id="vTY-tT-naP">
+                                <rect key="frame" x="251" y="468" width="143" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meet the E-Boards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsN-4D-64D">
+                                <rect key="frame" x="20" y="121" width="374" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="40"/>
+                                <color key="textColor" red="0.80927497150000005" green="0.3101727366" blue="0.31762924790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SEASA" translatesAutoresizingMaskIntoConstraints="NO" id="M2H-6a-L1M">
+                                <rect key="frame" x="136" y="746" width="143" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9bY-LQ-PFt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uga-el-GeI">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="LKS-cb-erZ">
+                            <connections>
+                                <action selector="backPressed:" destination="mmA-Fb-zEN" id="aLQ-EW-NAc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTR-Vl-hjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tVu-9b-vib">
+                    <connections>
+                        <action selector="ACPressed:" destination="mmA-Fb-zEN" id="ppx-vj-cfL"/>
+                        <segue destination="Yal-5g-Luk" kind="show" identifier="ShowAC" id="Xkr-8X-0Ax"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2498.5507246376815" y="1081.4732142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LVW-Ts-6WM">
+            <objects>
+                <viewController id="Yal-5g-Luk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3zo-d8-ZWH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3WJ-Kn-CtP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="2378"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mt-gw-clB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2413"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Asian Caucus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2K-zK-frp">
+                                                <rect key="frame" x="20" y="39" width="374" height="63"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="45"/>
+                                                <color key="textColor" red="0.30403637886047363" green="0.67002224922180176" blue="0.84708428382873535" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Euna" translatesAutoresizingMaskIntoConstraints="NO" id="LtT-4W-sWF">
+                                                <rect key="frame" x="20" y="110" width="134" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Co-President - Euna Lee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BG2-sM-lkn">
+                                                <rect key="frame" x="162" y="110" width="195" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HaeJune" translatesAutoresizingMaskIntoConstraints="NO" id="tzB-RP-uDU">
+                                                <rect key="frame" x="20" y="291" width="134" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Co-President - Hae June Lee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYn-Mu-cTZ">
+                                                <rect key="frame" x="162" y="291" width="224" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Jessica" translatesAutoresizingMaskIntoConstraints="NO" id="wcG-Ts-bUH">
+                                                <rect key="frame" x="20" y="482" width="134" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Treasurer - Jessica Lu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPB-xb-5eP">
+                                                <rect key="frame" x="162" y="482" width="224" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ella" translatesAutoresizingMaskIntoConstraints="NO" id="xEt-dT-7PN">
+                                                <rect key="frame" x="20" y="662" width="134" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gordon" translatesAutoresizingMaskIntoConstraints="NO" id="DFc-cI-V8C">
+                                                <rect key="frame" x="20" y="842" width="134" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shannon" translatesAutoresizingMaskIntoConstraints="NO" id="OWg-pb-Wz8">
+                                                <rect key="frame" x="20" y="1005" width="134" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Everrett" translatesAutoresizingMaskIntoConstraints="NO" id="0BV-tF-dDO">
+                                                <rect key="frame" x="20" y="1167" width="134" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ivan" translatesAutoresizingMaskIntoConstraints="NO" id="x0N-nf-afw">
+                                                <rect key="frame" x="20" y="1348" width="134" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Anna" translatesAutoresizingMaskIntoConstraints="NO" id="Xp6-6c-sx5">
+                                                <rect key="frame" x="20" y="1519" width="134" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Jason" translatesAutoresizingMaskIntoConstraints="NO" id="sla-Q9-L1A">
+                                                <rect key="frame" x="20" y="1697" width="134" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Riya" translatesAutoresizingMaskIntoConstraints="NO" id="tyg-fd-Dkk">
+                                                <rect key="frame" x="20" y="1868" width="134" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Nancy" translatesAutoresizingMaskIntoConstraints="NO" id="Mew-sF-VhG">
+                                                <rect key="frame" x="20" y="2039" width="134" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Billy" translatesAutoresizingMaskIntoConstraints="NO" id="yhi-Fj-ogc">
+                                                <rect key="frame" x="20" y="2212" width="134" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Secretary - Ella Tang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpg-wr-UN2">
+                                                <rect key="frame" x="162" y="662" width="224" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Media Chair - Gordon Chang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1E-5Y-z9k">
+                                                <rect key="frame" x="170" y="842" width="224" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Co CRC - Jason Tee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbP-8L-Zxo">
+                                                <rect key="frame" x="170" y="1697" width="224" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Co CRC - Riya Thomas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWN-YG-U7z">
+                                                <rect key="frame" x="170" y="1868" width="224" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Co FFP Director - Nancy Yone" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvY-ff-B5e">
+                                                <rect key="frame" x="170" y="2039" width="224" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AHANA Caucus Rep - Shannon Park" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SII-Id-DqU">
+                                                <rect key="frame" x="170" y="1005" width="224" height="54"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Co S&amp;E - Everett Kim" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOW-Nu-haJ">
+                                                <rect key="frame" x="170" y="1167" width="224" height="39"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Co S&amp;E - Ivan Ip" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uI-Rc-9cA">
+                                                <rect key="frame" x="162" y="1348" width="224" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Co PPI - Anna Chen" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPa-md-qBG">
+                                                <rect key="frame" x="162" y="1519" width="224" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Co FFP Director - Billy Kan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z48-rp-AWE">
+                                                <rect key="frame" x="162" y="2212" width="224" height="39"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2413" id="4F9-Gd-wpq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3mt-gw-clB" firstAttribute="leading" secondItem="3WJ-Kn-CtP" secondAttribute="leading" id="3fw-QN-QBt"/>
+                                    <constraint firstAttribute="bottom" secondItem="3mt-gw-clB" secondAttribute="bottom" constant="-35" id="HzE-XA-7a1"/>
+                                    <constraint firstItem="3mt-gw-clB" firstAttribute="top" secondItem="3WJ-Kn-CtP" secondAttribute="top" id="P5p-AZ-yfs"/>
+                                    <constraint firstItem="3mt-gw-clB" firstAttribute="centerX" secondItem="3WJ-Kn-CtP" secondAttribute="centerX" id="PFn-9A-QqM"/>
+                                    <constraint firstAttribute="trailing" secondItem="3mt-gw-clB" secondAttribute="trailing" id="brH-fv-WT2"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3WJ-Kn-CtP" firstAttribute="bottom" secondItem="3rz-Uw-gRX" secondAttribute="bottom" id="97P-9z-MMx"/>
+                            <constraint firstItem="3WJ-Kn-CtP" firstAttribute="leading" secondItem="3zo-d8-ZWH" secondAttribute="leading" id="NdN-PU-J8Z"/>
+                            <constraint firstAttribute="trailing" secondItem="3WJ-Kn-CtP" secondAttribute="trailing" id="a8K-9G-CBJ"/>
+                            <constraint firstItem="3WJ-Kn-CtP" firstAttribute="top" secondItem="3rz-Uw-gRX" secondAttribute="top" id="r2I-T6-IWg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3rz-Uw-gRX"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="2500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rul-NM-gLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2498.5507246376815" y="2396.6517857142858"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="giR-UP-RtX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NmT-8t-fyA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zwv-ez-AQl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wa0-Bb-QEj" kind="relationship" relationship="rootViewController" id="nSi-qc-ceB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSM-4X-swx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3419" y="867"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0gk-Z6-DiK">
+            <objects>
+                <viewController id="Zhd-KK-aEJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0dJ-WT-ETL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is Asian Caucus?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRB-OI-CMK">
+                                <rect key="frame" x="62" y="117" width="290" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="26"/>
+                                <color key="textColor" red="0.99307483434677124" green="0.94869750738143921" blue="0.39592736959457397" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Founded - September 5, 1991" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDU-kR-oul">
+                                <rect key="frame" x="162" y="554" width="232" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="APACAR 2019 - Colorized" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgf-dO-o0D">
+                                <rect key="frame" x="24" y="806" width="232" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <color key="textColor" red="0.99307483429999999" green="0.94869750740000003" blue="0.39592736960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="APACAR" translatesAutoresizingMaskIntoConstraints="NO" id="ea2-c2-Hdx">
+                                <rect key="frame" x="107" y="382" width="287" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="haha" translatesAutoresizingMaskIntoConstraints="NO" id="dR5-zQ-wF8">
+                                <rect key="frame" x="24" y="635" width="283" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gX9-DT-mW8">
+                                <rect key="frame" x="62" y="170" width="290" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">As representatives of the Asian-American community here at Boston College, the Asian Caucus (AC) strives to foster relationships between its members and the greater Boston College and Boston communities. Through a balanced social, educational, and political agenda, we are committed to creating a unified voice that is necessary to create awareness of issues that affect the Asian-American community. Our mission is threefold:
+
+1. To create social justice on campus.
+2. To promote social justice off campus.
+3. To utilize the leaders and skills of AC to educate BC students and people in general.
+
+
+Asian Cultural Organizations
+The Asian Caucus is committed to the eight culture clubs it comprises. We recognize that part of the task given to AC is to serve the culture clubs by supporting their efforts and acting as a resource to them. Furthermore, to serve as the unifying voice for the Asian-American community at Boston College, AC is aware of the importance of creating and fostering strong relationships among the members of the cultural clubs. There must exist a mutual understanding of the support that is required in order to achieve this unity. Through its efforts, AC hopes to be truly representative of the community for which it speaks. 
+
+AHANA Community
+In order to accomplish its mission, AC understands the importance of solidarity. Recognizing the common struggles that are shared with members of the AHANA community, AC hopes to work with other AHANA organizations in the efforts taking place to create a better environment at Boston College. AC is dedicated to building coalitions that will allow us to most effectively address the issues pertinent to the AHANA community. 
+
+Boston College and the Greater Boston Community
+The Asian Caucus mission would not be complete without the participation and support of the Boston College community. Recognizing this, we commit ourselves to reaching out to the diverse audience that makes up Boston College. We hope to promote dialogue and foster relationships through our various events. AC strives not only to be active in the Boston College community, but also in the greater Boston community. Through the strengthening of ties with Asian-American alumni, collaboration in intercollegiate events, and service in the community, AC hopes to increase its presence in the greater Boston community.
+</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="q0r-hz-sXm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jeg-o7-cuv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495.6521739130435" y="1080.8035714285713"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aXE-PS-51h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D7w-BU-Sql" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kcQ-yV-z1a">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mmA-Fb-zEN" kind="relationship" relationship="rootViewController" id="Xz0-wM-Yw8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Pg-qx-Vtx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1546" y="1082"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AC_LOGO" width="2046" height="1975"/>
+        <image name="APACAR" width="1620" height="966"/>
+        <image name="Anna" width="960" height="960"/>
+        <image name="Billy" width="960" height="959"/>
+        <image name="CSA" width="1043" height="1043"/>
+        <image name="Ella" width="960" height="960"/>
+        <image name="Euna" width="1200" height="1600"/>
+        <image name="Everrett" width="1536" height="1536"/>
+        <image name="Gordon" width="750" height="749"/>
+        <image name="HaeJune" width="720" height="720"/>
+        <image name="Ivan" width="2048" height="1152"/>
+        <image name="JCBC" width="900" height="900"/>
+        <image name="Jason" width="960" height="959"/>
+        <image name="Jessica" width="1175" height="1175"/>
+        <image name="KSA" width="520" height="520"/>
+        <image name="Nancy" width="2048" height="1365"/>
+        <image name="PSBC" width="960" height="960"/>
+        <image name="Riya" width="932" height="932"/>
+        <image name="SASA" width="1288" height="1288"/>
+        <image name="SEASA" width="813" height="500"/>
+        <image name="Shannon" width="888" height="888"/>
+        <image name="TCO" width="2048" height="2048"/>
+        <image name="VSA" width="400" height="400"/>
+        <image name="haha" width="4928" height="3264"/>
+        <image name="image0" width="1686" height="1125"/>
+    </resources>
 </document>

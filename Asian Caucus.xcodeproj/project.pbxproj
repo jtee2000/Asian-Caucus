@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62C34870A61F098311FA43A1 /* Pods_Asian_Caucus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780907C5225ED9659B725698 /* Pods_Asian_Caucus.framework */; };
 		96696F8E226EB78B00911EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96696F8D226EB78B00911EB4 /* AppDelegate.swift */; };
 		96696F90226EB78B00911EB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96696F8F226EB78B00911EB4 /* ViewController.swift */; };
 		96696F93226EB78B00911EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96696F91226EB78B00911EB4 /* Main.storyboard */; };
 		96696F95226EB78D00911EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96696F94226EB78D00911EB4 /* Assets.xcassets */; };
 		96696F98226EB78D00911EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96696F96226EB78D00911EB4 /* LaunchScreen.storyboard */; };
+		96696FA0226EC8D800911EB4 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96696F9F226EC8D800911EB4 /* SplashViewController.swift */; };
+		96953B652271674400ADF278 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96953B642271674400ADF278 /* DetailViewController.swift */; };
+		96953B672272CC8500ADF278 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96953B662272CC8500ADF278 /* EventViewController.swift */; };
+		96D4C07222756AFA0021526D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96D4C07122756AF90021526D /* GoogleService-Info.plist */; };
+		96F8FB8B22765579009D868A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8FB8A22765579009D868A /* Event.swift */; };
+		96F8FB8D22768CA7009D868A /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8FB8C22768CA7009D868A /* Events.swift */; };
+		96F8FB8F2276E2F4009D868A /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8FB8E2276E2F4009D868A /* NewViewController.swift */; };
+		96FC957E227578D6009BE42E /* MeetEboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC957D227578D6009BE42E /* MeetEboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		780907C5225ED9659B725698 /* Pods_Asian_Caucus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asian_Caucus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96696F8A226EB78B00911EB4 /* Asian Caucus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Asian Caucus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96696F8D226EB78B00911EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96696F8F226EB78B00911EB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,16 @@
 		96696F94226EB78D00911EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96696F97226EB78D00911EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96696F99226EB78D00911EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96696F9F226EC8D800911EB4 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		96953B642271674400ADF278 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		96953B662272CC8500ADF278 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		96D4C07122756AF90021526D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		96F8FB8A22765579009D868A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		96F8FB8C22768CA7009D868A /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		96F8FB8E2276E2F4009D868A /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		96FC957D227578D6009BE42E /* MeetEboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetEboardViewController.swift; sourceTree = "<group>"; };
+		B6BC6E55B0F577846321CEEB /* Pods-Asian Caucus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asian Caucus.release.xcconfig"; path = "Target Support Files/Pods-Asian Caucus/Pods-Asian Caucus.release.xcconfig"; sourceTree = "<group>"; };
+		EA87C409E377436612C4E263 /* Pods-Asian Caucus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asian Caucus.debug.xcconfig"; path = "Target Support Files/Pods-Asian Caucus/Pods-Asian Caucus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C34870A61F098311FA43A1 /* Pods_Asian_Caucus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		032B24B536209C5E134B6856 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA87C409E377436612C4E263 /* Pods-Asian Caucus.debug.xcconfig */,
+				B6BC6E55B0F577846321CEEB /* Pods-Asian Caucus.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F09D058CAD97770558E2AEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				780907C5225ED9659B725698 /* Pods_Asian_Caucus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		96696F81226EB78B00911EB4 = {
 			isa = PBXGroup;
 			children = (
 				96696F8C226EB78B00911EB4 /* Asian Caucus */,
 				96696F8B226EB78B00911EB4 /* Products */,
+				032B24B536209C5E134B6856 /* Pods */,
+				8F09D058CAD97770558E2AEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +96,18 @@
 			children = (
 				96696F8D226EB78B00911EB4 /* AppDelegate.swift */,
 				96696F8F226EB78B00911EB4 /* ViewController.swift */,
+				96FC957D227578D6009BE42E /* MeetEboardViewController.swift */,
+				96696F9F226EC8D800911EB4 /* SplashViewController.swift */,
+				96953B642271674400ADF278 /* DetailViewController.swift */,
+				96F8FB8E2276E2F4009D868A /* NewViewController.swift */,
+				96953B662272CC8500ADF278 /* EventViewController.swift */,
+				96F8FB8A22765579009D868A /* Event.swift */,
+				96F8FB8C22768CA7009D868A /* Events.swift */,
 				96696F91226EB78B00911EB4 /* Main.storyboard */,
 				96696F94226EB78D00911EB4 /* Assets.xcassets */,
 				96696F96226EB78D00911EB4 /* LaunchScreen.storyboard */,
 				96696F99226EB78D00911EB4 /* Info.plist */,
+				96D4C07122756AF90021526D /* GoogleService-Info.plist */,
 			);
 			path = "Asian Caucus";
 			sourceTree = "<group>";
@@ -71,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96696F9C226EB78D00911EB4 /* Build configuration list for PBXNativeTarget "Asian Caucus" */;
 			buildPhases = (
+				68367D7C3812D7630259325D /* [CP] Check Pods Manifest.lock */,
 				96696F86226EB78B00911EB4 /* Sources */,
 				96696F87226EB78B00911EB4 /* Frameworks */,
 				96696F88226EB78B00911EB4 /* Resources */,
+				40A4952498A9B5960C82387E /* [CP] Copy Pods Resources */,
+				0D64A3768A181504B0F7DEB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96696F98226EB78D00911EB4 /* LaunchScreen.storyboard in Resources */,
+				96D4C07222756AFA0021526D /* GoogleService-Info.plist in Resources */,
 				96696F95226EB78D00911EB4 /* Assets.xcassets in Resources */,
 				96696F93226EB78B00911EB4 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +182,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D64A3768A181504B0F7DEB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Asian Caucus/Pods-Asian Caucus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Asian Caucus/Pods-Asian Caucus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40A4952498A9B5960C82387E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Asian Caucus/Pods-Asian Caucus-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Asian Caucus/Pods-Asian Caucus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68367D7C3812D7630259325D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Asian Caucus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		96696F86226EB78B00911EB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96953B672272CC8500ADF278 /* EventViewController.swift in Sources */,
+				96696FA0226EC8D800911EB4 /* SplashViewController.swift in Sources */,
 				96696F90226EB78B00911EB4 /* ViewController.swift in Sources */,
 				96696F8E226EB78B00911EB4 /* AppDelegate.swift in Sources */,
+				96F8FB8D22768CA7009D868A /* Events.swift in Sources */,
+				96FC957E227578D6009BE42E /* MeetEboardViewController.swift in Sources */,
+				96F8FB8F2276E2F4009D868A /* NewViewController.swift in Sources */,
+				96F8FB8B22765579009D868A /* Event.swift in Sources */,
+				96953B652271674400ADF278 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,36 +436,40 @@
 		};
 		96696F9D226EB78D00911EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA87C409E377436612C4E263 /* Pods-Asian Caucus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48HJKJ629R;
 				INFOPLIST_FILE = "Asian Caucus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tee.Asian-Caucus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		96696F9E226EB78D00911EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6BC6E55B0F577846321CEEB /* Pods-Asian Caucus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48HJKJ629R;
 				INFOPLIST_FILE = "Asian Caucus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tee.Asian-Caucus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
